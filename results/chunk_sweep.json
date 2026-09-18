@@ -1,0 +1,335 @@
+{
+  "meta": {
+    "policy": "lerobot/smolvla_libero",
+    "suite": "libero_spatial",
+    "tasks": "all",
+    "episodes_per_task": 15,
+    "batch": 5,
+    "async_envs": false,
+    "num_steps": 10,
+    "empty_cameras": 0,
+    "note": "n_action_steps는 개루프 실행 길이(chunk_size=50 중 재추론 없이 쓰는 스텝 수)."
+  },
+  "rows": [
+    {
+      "n_action_steps": 1,
+      "success": 124,
+      "n_episodes": 150,
+      "success_rate": 82.7,
+      "wilson95": [
+        75.8,
+        87.9
+      ],
+      "per_task": [
+        {
+          "task_id": 0,
+          "success": 14,
+          "n": 15
+        },
+        {
+          "task_id": 1,
+          "success": 14,
+          "n": 15
+        },
+        {
+          "task_id": 2,
+          "success": 14,
+          "n": 15
+        },
+        {
+          "task_id": 3,
+          "success": 14,
+          "n": 15
+        },
+        {
+          "task_id": 4,
+          "success": 13,
+          "n": 15
+        },
+        {
+          "task_id": 5,
+          "success": 0,
+          "n": 15
+        },
+        {
+          "task_id": 6,
+          "success": 15,
+          "n": 15
+        },
+        {
+          "task_id": 7,
+          "success": 14,
+          "n": 15
+        },
+        {
+          "task_id": 8,
+          "success": 12,
+          "n": 15
+        },
+        {
+          "task_id": 9,
+          "success": 14,
+          "n": 15
+        }
+      ],
+      "seconds": 3646.9,
+      "rc": 0
+    },
+    {
+      "n_action_steps": 5,
+      "success": 115,
+      "n_episodes": 150,
+      "success_rate": 76.7,
+      "wilson95": [
+        69.3,
+        82.7
+      ],
+      "per_task": [
+        {
+          "task_id": 0,
+          "success": 14,
+          "n": 15
+        },
+        {
+          "task_id": 1,
+          "success": 12,
+          "n": 15
+        },
+        {
+          "task_id": 2,
+          "success": 14,
+          "n": 15
+        },
+        {
+          "task_id": 3,
+          "success": 14,
+          "n": 15
+        },
+        {
+          "task_id": 4,
+          "success": 11,
+          "n": 15
+        },
+        {
+          "task_id": 5,
+          "success": 0,
+          "n": 15
+        },
+        {
+          "task_id": 6,
+          "success": 14,
+          "n": 15
+        },
+        {
+          "task_id": 7,
+          "success": 13,
+          "n": 15
+        },
+        {
+          "task_id": 8,
+          "success": 12,
+          "n": 15
+        },
+        {
+          "task_id": 9,
+          "success": 11,
+          "n": 15
+        }
+      ],
+      "seconds": 2173.8,
+      "rc": 0
+    },
+    {
+      "n_action_steps": 10,
+      "success": 114,
+      "n_episodes": 150,
+      "success_rate": 76.0,
+      "wilson95": [
+        68.6,
+        82.1
+      ],
+      "per_task": [
+        {
+          "task_id": 0,
+          "success": 14,
+          "n": 15
+        },
+        {
+          "task_id": 1,
+          "success": 13,
+          "n": 15
+        },
+        {
+          "task_id": 2,
+          "success": 14,
+          "n": 15
+        },
+        {
+          "task_id": 3,
+          "success": 14,
+          "n": 15
+        },
+        {
+          "task_id": 4,
+          "success": 8,
+          "n": 15
+        },
+        {
+          "task_id": 5,
+          "success": 0,
+          "n": 15
+        },
+        {
+          "task_id": 6,
+          "success": 15,
+          "n": 15
+        },
+        {
+          "task_id": 7,
+          "success": 11,
+          "n": 15
+        },
+        {
+          "task_id": 8,
+          "success": 12,
+          "n": 15
+        },
+        {
+          "task_id": 9,
+          "success": 13,
+          "n": 15
+        }
+      ],
+      "seconds": 1932.8,
+      "rc": 0
+    },
+    {
+      "n_action_steps": 25,
+      "success": 106,
+      "n_episodes": 150,
+      "success_rate": 70.7,
+      "wilson95": [
+        62.9,
+        77.4
+      ],
+      "per_task": [
+        {
+          "task_id": 0,
+          "success": 15,
+          "n": 15
+        },
+        {
+          "task_id": 1,
+          "success": 9,
+          "n": 15
+        },
+        {
+          "task_id": 2,
+          "success": 15,
+          "n": 15
+        },
+        {
+          "task_id": 3,
+          "success": 11,
+          "n": 15
+        },
+        {
+          "task_id": 4,
+          "success": 7,
+          "n": 15
+        },
+        {
+          "task_id": 5,
+          "success": 1,
+          "n": 15
+        },
+        {
+          "task_id": 6,
+          "success": 13,
+          "n": 15
+        },
+        {
+          "task_id": 7,
+          "success": 10,
+          "n": 15
+        },
+        {
+          "task_id": 8,
+          "success": 12,
+          "n": 15
+        },
+        {
+          "task_id": 9,
+          "success": 13,
+          "n": 15
+        }
+      ],
+      "seconds": 1851.3,
+      "rc": 0
+    },
+    {
+      "n_action_steps": 50,
+      "success": 73,
+      "n_episodes": 150,
+      "success_rate": 48.7,
+      "wilson95": [
+        40.8,
+        56.6
+      ],
+      "per_task": [
+        {
+          "task_id": 0,
+          "success": 10,
+          "n": 15
+        },
+        {
+          "task_id": 1,
+          "success": 9,
+          "n": 15
+        },
+        {
+          "task_id": 2,
+          "success": 8,
+          "n": 15
+        },
+        {
+          "task_id": 3,
+          "success": 9,
+          "n": 15
+        },
+        {
+          "task_id": 4,
+          "success": 5,
+          "n": 15
+        },
+        {
+          "task_id": 5,
+          "success": 0,
+          "n": 15
+        },
+        {
+          "task_id": 6,
+          "success": 12,
+          "n": 15
+        },
+        {
+          "task_id": 7,
+          "success": 5,
+          "n": 15
+        },
+        {
+          "task_id": 8,
+          "success": 4,
+          "n": 15
+        },
+        {
+          "task_id": 9,
+          "success": 11,
+          "n": 15
+        }
+      ],
+      "seconds": 2111.7,
+      "rc": 0
+    }
+  ]
+}

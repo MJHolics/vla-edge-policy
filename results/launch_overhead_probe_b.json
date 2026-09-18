@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "policy": "lerobot/smolvla_libero",
+    "num_steps": 1,
+    "n": 40,
+    "warmup": 15,
+    "note": "NVTX call_i/warmup_i 레인지로 감쌈. nsys -t cuda,osrt,nvtx로 감싸 실행해야 의미 있다."
+  },
+  "rows": [
+    {
+      "i": 0,
+      "latency_ms": 88.94
+    },
+    {
+      "i": 1,
+      "latency_ms": 73.926
+    },
+    {
+      "i": 2,
+      "latency_ms": 81.373
+    },
+    {
+      "i": 3,
+      "latency_ms": 127.483
+    },
+    {
+      "i": 4,
+      "latency_ms": 83.631
+    },
+    {
+      "i": 5,
+      "latency_ms": 71.624
+    },
+    {
+      "i": 6,
+      "latency_ms": 71.296
+    },
+    {
+      "i": 7,
+      "latency_ms": 80.281
+    },
+    {
+      "i": 8,
+      "latency_ms": 183.218
+    },
+    {
+      "i": 9,
+      "latency_ms": 114.397
+    },
+    {
+      "i": 10,
+      "latency_ms": 74.428
+    },
+    {
+      "i": 11,
+      "latency_ms": 112.41
+    },
+    {
+      "i": 12,
+      "latency_ms": 75.083
+    },
+    {
+      "i": 13,
+      "latency_ms": 95.257
+    },
+    {
+      "i": 14,
+      "latency_ms": 73.497
+    },
+    {
+      "i": 15,
+      "latency_ms": 73.365
+    },
+    {
+      "i": 16,
+      "latency_ms": 74.251
+    },
+    {
+      "i": 17,
+      "latency_ms": 74.11
+    },
+    {
+      "i": 18,
+      "latency_ms": 72.702
+    },
+    {
+      "i": 19,
+      "latency_ms": 104.377
+    },
+    {
+      "i": 20,
+      "latency_ms": 100.875
+    },
+    {
+      "i": 21,
+      "latency_ms": 72.844
+    },
+    {
+      "i": 22,
+      "latency_ms": 74.51
+    },
+    {
+      "i": 23,
+      "latency_ms": 137.983
+    },
+    {
+      "i": 24,
+      "latency_ms": 76.108
+    },
+    {
+      "i": 25,
+      "latency_ms": 72.562
+    },
+    {
+      "i": 26,
+      "latency_ms": 72.757
+    },
+    {
+      "i": 27,
+      "latency_ms": 94.545
+    },
+    {
+      "i": 28,
+      "latency_ms": 178.875
+    },
+    {
+      "i": 29,
+      "latency_ms": 126.099
+    },
+    {
+      "i": 30,
+      "latency_ms": 82.632
+    },
+    {
+      "i": 31,
+      "latency_ms": 72.851
+    },
+    {
+      "i": 32,
+      "latency_ms": 128.594
+    },
+    {
+      "i": 33,
+      "latency_ms": 81.314
+    },
+    {
+      "i": 34,
+      "latency_ms": 73.409
+    },
+    {
+      "i": 35,
+      "latency_ms": 74.321
+    },
+    {
+      "i": 36,
+      "latency_ms": 136.337
+    },
+    {
+      "i": 37,
+      "latency_ms": 74.355
+    },
+    {
+      "i": 38,
+      "latency_ms": 73.916
+    },
+    {
+      "i": 39,
+      "latency_ms": 74.183
+    }
+  ]
+}

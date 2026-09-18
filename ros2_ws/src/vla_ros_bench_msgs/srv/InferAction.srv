@@ -1,0 +1,11 @@
+int64 seq
+sensor_msgs/Image image1
+sensor_msgs/Image image2
+float32[] state
+string task
+float64 client_send_stamp
+---
+float32[] action
+int32 action_horizon
+float64 server_recv_stamp
+float64 server_done_stamp

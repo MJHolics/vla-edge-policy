@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "policy": "lerobot/smolvla_libero",
+    "suite": "libero_spatial",
+    "episodes_per_task": 5,
+    "batch": 5,
+    "num_steps": 10,
+    "empty_cameras": 0,
+    "note": "env.fps 는 robosuite control_freq 로 그대로 들어간다(configs.py gym_kwargs)."
+  },
+  "rows": [
+    {
+      "fps": 20,
+      "num_steps": 10,
+      "empty_cameras": 0,
+      "success": 30,
+      "n_episodes": 50,
+      "success_rate": 60.0,
+      "wilson95": [
+        46.2,
+        72.4
+      ],
+      "per_task": {
+        "0": {
+          "success": 4,
+          "n": 5
+        },
+        "1": {
+          "success": 3,
+          "n": 5
+        },
+        "2": {
+          "success": 4,
+          "n": 5
+        },
+        "3": {
+          "success": 5,
+          "n": 5
+        },
+        "4": {
+          "success": 1,
+          "n": 5
+        },
+        "5": {
+          "success": 0,
+          "n": 5
+        },
+        "6": {
+          "success": 4,
+          "n": 5
+        },
+        "7": {
+          "success": 2,
+          "n": 5
+        },
+        "8": {
+          "success": 2,
+          "n": 5
+        },
+        "9": {
+          "success": 5,
+          "n": 5
+        }
+      },
+      "seconds": 630.4,
+      "rc": 0
+    },
+    {
+      "fps": 10,
+      "num_steps": 10,
+      "empty_cameras": 0,
+      "success": 0,
+      "n_episodes": 50,
+      "success_rate": 0.0,
+      "wilson95": [
+        0.0,
+        7.1
+      ],
+      "per_task": {
+        "0": {
+          "success": 0,
+          "n": 5
+        },
+        "1": {
+          "success": 0,
+          "n": 5
+        },
+        "2": {
+          "success": 0,
+          "n": 5
+        },
+        "3": {
+          "success": 0,
+          "n": 5
+        },
+        "4": {
+          "success": 0,
+          "n": 5
+        },
+        "5": {
+          "success": 0,
+          "n": 5
+        },
+        "6": {
+          "success": 0,
+          "n": 5
+        },
+        "7": {
+          "success": 0,
+          "n": 5
+        },
+        "8": {
+          "success": 0,
+          "n": 5
+        },
+        "9": {
+          "success": 0,
+          "n": 5
+        }
+      },
+      "seconds": 734.8,
+      "rc": 0
+    }
+  ]
+}

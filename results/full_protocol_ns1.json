@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "policy": "lerobot/smolvla_libero",
+    "suite": "libero_spatial",
+    "tasks": "all",
+    "episodes_per_task": 50,
+    "batch": 5,
+    "async_envs": false,
+    "empty_cameras": 0,
+    "note": "성공률은 스텝 기반이라 sim wall-clock과 무관하다."
+  },
+  "rows": [
+    {
+      "num_steps": 1,
+      "success": 261,
+      "n_episodes": 500,
+      "success_rate": 52.2,
+      "wilson95": [
+        47.8,
+        56.5
+      ],
+      "per_task": [
+        {
+          "task_id": 0,
+          "success": 30,
+          "n": 50
+        },
+        {
+          "task_id": 1,
+          "success": 32,
+          "n": 50
+        },
+        {
+          "task_id": 2,
+          "success": 33,
+          "n": 50
+        },
+        {
+          "task_id": 3,
+          "success": 33,
+          "n": 50
+        },
+        {
+          "task_id": 4,
+          "success": 15,
+          "n": 50
+        },
+        {
+          "task_id": 5,
+          "success": 0,
+          "n": 50
+        },
+        {
+          "task_id": 6,
+          "success": 38,
+          "n": 50
+        },
+        {
+          "task_id": 7,
+          "success": 27,
+          "n": 50
+        },
+        {
+          "task_id": 8,
+          "success": 28,
+          "n": 50
+        },
+        {
+          "task_id": 9,
+          "success": 25,
+          "n": 50
+        }
+      ],
+      "seconds": 4970.0,
+      "rc": 0
+    }
+  ]
+}

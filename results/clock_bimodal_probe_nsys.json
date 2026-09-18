@@ -1,0 +1,262 @@
+{
+  "meta": {
+    "policy": "lerobot/smolvla_libero",
+    "num_steps": 1,
+    "n": 40,
+    "warmup": 15,
+    "threshold_ms": 75.0,
+    "note": "nvidia-smi -lgc가 이 WSL2 환경에서 실패해(Unknown Error, 지원 목록의 값 3105MHz로도 재현) 클럭 고정 대신 호출별 클럭·전력을 직접 상관 분석했다.",
+    "verdict": null
+  },
+  "rows": [
+    {
+      "i": 0,
+      "latency_ms": 126.557,
+      "clocks_sm_mhz": 1425.0,
+      "power_w": 57.44
+    },
+    {
+      "i": 1,
+      "latency_ms": 175.413,
+      "clocks_sm_mhz": 1260.0,
+      "power_w": 47.75
+    },
+    {
+      "i": 2,
+      "latency_ms": 151.031,
+      "clocks_sm_mhz": 1215.0,
+      "power_w": 41.01
+    },
+    {
+      "i": 3,
+      "latency_ms": 144.773,
+      "clocks_sm_mhz": 1080.0,
+      "power_w": 37.43
+    },
+    {
+      "i": 4,
+      "latency_ms": 156.939,
+      "clocks_sm_mhz": 1035.0,
+      "power_w": 35.69
+    },
+    {
+      "i": 5,
+      "latency_ms": 116.241,
+      "clocks_sm_mhz": 1050.0,
+      "power_w": 34.63
+    },
+    {
+      "i": 6,
+      "latency_ms": 115.977,
+      "clocks_sm_mhz": 1080.0,
+      "power_w": 32.65
+    },
+    {
+      "i": 7,
+      "latency_ms": 116.143,
+      "clocks_sm_mhz": 1080.0,
+      "power_w": 30.75
+    },
+    {
+      "i": 8,
+      "latency_ms": 110.968,
+      "clocks_sm_mhz": 1140.0,
+      "power_w": 30.66
+    },
+    {
+      "i": 9,
+      "latency_ms": 177.259,
+      "clocks_sm_mhz": 1140.0,
+      "power_w": 28.68
+    },
+    {
+      "i": 10,
+      "latency_ms": 132.796,
+      "clocks_sm_mhz": 1140.0,
+      "power_w": 28.83
+    },
+    {
+      "i": 11,
+      "latency_ms": 102.956,
+      "clocks_sm_mhz": 915.0,
+      "power_w": 28.17
+    },
+    {
+      "i": 12,
+      "latency_ms": 124.603,
+      "clocks_sm_mhz": 915.0,
+      "power_w": 28.35
+    },
+    {
+      "i": 13,
+      "latency_ms": 170.476,
+      "clocks_sm_mhz": 1020.0,
+      "power_w": 28.71
+    },
+    {
+      "i": 14,
+      "latency_ms": 196.164,
+      "clocks_sm_mhz": 1020.0,
+      "power_w": 28.72
+    },
+    {
+      "i": 15,
+      "latency_ms": 173.89,
+      "clocks_sm_mhz": 1020.0,
+      "power_w": 27.95
+    },
+    {
+      "i": 16,
+      "latency_ms": 124.368,
+      "clocks_sm_mhz": 1020.0,
+      "power_w": 27.89
+    },
+    {
+      "i": 17,
+      "latency_ms": 122.077,
+      "clocks_sm_mhz": 900.0,
+      "power_w": 27.88
+    },
+    {
+      "i": 18,
+      "latency_ms": 159.445,
+      "clocks_sm_mhz": 900.0,
+      "power_w": 28.01
+    },
+    {
+      "i": 19,
+      "latency_ms": 194.273,
+      "clocks_sm_mhz": 1065.0,
+      "power_w": 27.92
+    },
+    {
+      "i": 20,
+      "latency_ms": 106.868,
+      "clocks_sm_mhz": 1065.0,
+      "power_w": 28.27
+    },
+    {
+      "i": 21,
+      "latency_ms": 151.642,
+      "clocks_sm_mhz": 1050.0,
+      "power_w": 28.14
+    },
+    {
+      "i": 22,
+      "latency_ms": 125.768,
+      "clocks_sm_mhz": 1050.0,
+      "power_w": 28.41
+    },
+    {
+      "i": 23,
+      "latency_ms": 106.97,
+      "clocks_sm_mhz": 915.0,
+      "power_w": 27.7
+    },
+    {
+      "i": 24,
+      "latency_ms": 127.816,
+      "clocks_sm_mhz": 855.0,
+      "power_w": 28.23
+    },
+    {
+      "i": 25,
+      "latency_ms": 116.919,
+      "clocks_sm_mhz": 855.0,
+      "power_w": 28.22
+    },
+    {
+      "i": 26,
+      "latency_ms": 162.962,
+      "clocks_sm_mhz": 810.0,
+      "power_w": 27.94
+    },
+    {
+      "i": 27,
+      "latency_ms": 108.335,
+      "clocks_sm_mhz": 660.0,
+      "power_w": 28.08
+    },
+    {
+      "i": 28,
+      "latency_ms": 190.291,
+      "clocks_sm_mhz": 750.0,
+      "power_w": 27.37
+    },
+    {
+      "i": 29,
+      "latency_ms": 136.891,
+      "clocks_sm_mhz": 825.0,
+      "power_w": 27.39
+    },
+    {
+      "i": 30,
+      "latency_ms": 120.474,
+      "clocks_sm_mhz": 705.0,
+      "power_w": 27.34
+    },
+    {
+      "i": 31,
+      "latency_ms": 225.938,
+      "clocks_sm_mhz": 885.0,
+      "power_w": 28.07
+    },
+    {
+      "i": 32,
+      "latency_ms": 146.552,
+      "clocks_sm_mhz": 885.0,
+      "power_w": 28.31
+    },
+    {
+      "i": 33,
+      "latency_ms": 153.463,
+      "clocks_sm_mhz": 705.0,
+      "power_w": 28.03
+    },
+    {
+      "i": 34,
+      "latency_ms": 125.6,
+      "clocks_sm_mhz": 750.0,
+      "power_w": 28.1
+    },
+    {
+      "i": 35,
+      "latency_ms": 152.494,
+      "clocks_sm_mhz": 750.0,
+      "power_w": 27.87
+    },
+    {
+      "i": 36,
+      "latency_ms": 111.423,
+      "clocks_sm_mhz": 735.0,
+      "power_w": 27.34
+    },
+    {
+      "i": 37,
+      "latency_ms": 109.55,
+      "clocks_sm_mhz": 735.0,
+      "power_w": 27.49
+    },
+    {
+      "i": 38,
+      "latency_ms": 117.852,
+      "clocks_sm_mhz": 750.0,
+      "power_w": 27.42
+    },
+    {
+      "i": 39,
+      "latency_ms": 136.272,
+      "clocks_sm_mhz": 750.0,
+      "power_w": 27.41
+    }
+  ],
+  "lo_bucket": null,
+  "hi_bucket": {
+    "label": "고지연(>=75ms)",
+    "n": 40,
+    "latency_ms_median": 130.3,
+    "clocks_sm_mhz_mean": 947.6,
+    "clocks_sm_mhz_median": 915.0,
+    "power_w_mean": 30.4
+  }
+}

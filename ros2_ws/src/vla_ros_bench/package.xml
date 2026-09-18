@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>vla_ros_bench</name>
+  <version>0.0.1</version>
+  <description>SmolVLA 정책을 ROS2 서비스 노드로 감싸 메시징 오버헤드를 측정한다</description>
+  <maintainer email="wlalswhd369@naver.com">jimjongho</maintainer>
+  <license>Apache-2.0</license>
+
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>vla_ros_bench_msgs</depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

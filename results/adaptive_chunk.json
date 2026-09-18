@@ -1,0 +1,7864 @@
+{
+  "meta": {
+    "policy": "lerobot/smolvla_libero",
+    "suite": "libero_spatial",
+    "tasks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "episodes_per_task": 15,
+    "num_steps": 10,
+    "empty_cameras": 0,
+    "max_open_loop": 50,
+    "min_check": 5,
+    "tau_ratio": 0.4,
+    "tau_cos": 0.3,
+    "batch": 1,
+    "note": "배치=1(큐가 배치 공유라 개별 트리거를 보려면 배치=1 필요). trigger 신호=실제/명령 누적변위 비율·방향코사인(observation.state[:3]=eef_pos, action[:3]=델타위치 가정, env_processor.py LiberoProcessorStep 확인 근거)."
+  },
+  "rows": [
+    {
+      "task_id": 0,
+      "success": 15,
+      "n_episodes": 15,
+      "success_rate": 100.0,
+      "wilson95": [
+        79.6,
+        100.0
+      ],
+      "avg_inferences_per_ep": 16.33,
+      "avg_triggers_per_ep": 15.33,
+      "avg_exhausts_per_ep": 0.0,
+      "seconds": 282.4,
+      "episode_log": [],
+      "recovered_from_stdout": true
+    },
+    {
+      "task_id": 1,
+      "success": 10,
+      "n_episodes": 15,
+      "success_rate": 66.7,
+      "wilson95": [
+        41.7,
+        84.8
+      ],
+      "avg_inferences_per_ep": 33.73,
+      "avg_triggers_per_ep": 32.73,
+      "avg_exhausts_per_ep": 0.0,
+      "seconds": 522.7,
+      "episode_log": [],
+      "recovered_from_stdout": true
+    },
+    {
+      "task_id": 2,
+      "success": 15,
+      "n_episodes": 15,
+      "success_rate": 100.0,
+      "wilson95": [
+        79.6,
+        100.0
+      ],
+      "avg_inferences_per_ep": 20.93,
+      "avg_triggers_per_ep": 19.93,
+      "avg_exhausts_per_ep": 0.0,
+      "seconds": 311.5,
+      "episode_log": [],
+      "recovered_from_stdout": true
+    },
+    {
+      "task_id": 3,
+      "success": 12,
+      "n_episodes": 15,
+      "success_rate": 80.0,
+      "wilson95": [
+        54.8,
+        93.0
+      ],
+      "avg_inferences_per_ep": 25.07,
+      "avg_triggers_per_ep": 24.07,
+      "avg_exhausts_per_ep": 0.0,
+      "seconds": 404.2,
+      "episode_log": [],
+      "recovered_from_stdout": true
+    },
+    {
+      "task_id": 4,
+      "success": 12,
+      "n_episodes": 15,
+      "success_rate": 80.0,
+      "wilson95": [
+        54.8,
+        93.0
+      ],
+      "avg_inferences_per_ep": 34.0,
+      "avg_triggers_per_ep": 33.0,
+      "avg_exhausts_per_ep": 0.0,
+      "seconds": 539.7,
+      "episode_log": [],
+      "recovered_from_stdout": true
+    },
+    {
+      "task_id": 5,
+      "success": 2,
+      "n_episodes": 15,
+      "success_rate": 13.3,
+      "wilson95": [
+        3.7,
+        37.9
+      ],
+      "avg_inferences_per_ep": 53.33,
+      "avg_triggers_per_ep": 52.33,
+      "avg_exhausts_per_ep": 0.0,
+      "seconds": 835.5,
+      "episode_log": [],
+      "recovered_from_stdout": true
+    },
+    {
+      "task_id": 6,
+      "success": 15,
+      "n_episodes": 15,
+      "success_rate": 100.0,
+      "wilson95": [
+        79.6,
+        100.0
+      ],
+      "avg_inferences_per_ep": 22.13,
+      "avg_triggers_per_ep": 21.13,
+      "avg_exhausts_per_ep": 0.0,
+      "seconds": 322.3,
+      "episode_log": [],
+      "recovered_from_stdout": true
+    },
+    {
+      "task_id": 7,
+      "success": 13,
+      "n_episodes": 15,
+      "success_rate": 86.7,
+      "wilson95": [
+        62.1,
+        96.3
+      ],
+      "avg_inferences_per_ep": 29.4,
+      "avg_triggers_per_ep": 28.4,
+      "avg_exhausts_per_ep": 0.0,
+      "seconds": 514.6,
+      "episode_log": [
+        {
+          "n_infer": 23,
+          "n_trigger": 22,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.98
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.892
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.474
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.981
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.983
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.982
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.978
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.963
+            }
+          ]
+        },
+        {
+          "n_infer": 24,
+          "n_trigger": 23,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.974
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.017,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.003,
+              "cos": 0.485
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.8
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.954
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.942
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.969
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.987
+            }
+          ]
+        },
+        {
+          "n_infer": 25,
+          "n_trigger": 24,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.946
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.985
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.99
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.003,
+              "cos": -0.182
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.424
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.873
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.964
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.956
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.982
+            }
+          ]
+        },
+        {
+          "n_infer": 21,
+          "n_trigger": 20,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.978
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.982
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.651
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.938
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.978
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.99
+            }
+          ]
+        },
+        {
+          "n_infer": 22,
+          "n_trigger": 21,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.982
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.534
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": -0.344
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": -0.237
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.017,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.954
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.969
+            }
+          ]
+        },
+        {
+          "n_infer": 23,
+          "n_trigger": 22,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.956
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.984
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.001,
+              "cos": -0.96
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.681
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.979
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.977
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.96
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.982
+            }
+          ]
+        },
+        {
+          "n_infer": 23,
+          "n_trigger": 22,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.978
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.003,
+              "cos": -0.315
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.958
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.987
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.98
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.978
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.978
+            }
+          ]
+        },
+        {
+          "n_infer": 23,
+          "n_trigger": 22,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.978
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.983
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.001,
+              "cos": -0.529
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.777
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.966
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.951
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.982
+            }
+          ]
+        },
+        {
+          "n_infer": 56,
+          "n_trigger": 55,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.968
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.988
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.824
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.988
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.955
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.967
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.897
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.959
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.963
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.98
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.97
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.962
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.833
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.976
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.985
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.966
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.977
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.904
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.987
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.966
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.99
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.987
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.963
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.302
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.931
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.918
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.881
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.857
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.978
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.895
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.99
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.932
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": -0.404
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": -0.535
+            }
+          ]
+        },
+        {
+          "n_infer": 48,
+          "n_trigger": 47,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.954
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.983
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.959
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.95
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.003,
+              "cos": 0.961
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.876
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.004,
+              "cos": 0.796
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.919
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.99
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.985
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.966
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.964
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.956
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.809
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.543
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.001,
+              "cos": -0.176
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.003,
+              "cos": -0.808
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.004,
+              "cos": -0.522
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": -0.115
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.0,
+              "cos": 0.561
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.001,
+              "cos": -0.76
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.0,
+              "cos": -0.965
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.0,
+              "cos": -0.711
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.004,
+              "cos": -0.133
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.502
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.513
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.034
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.027,
+              "cos": 0.188
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.047,
+              "cos": 0.327
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.045,
+              "cos": 0.894
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.025,
+              "cos": 0.913
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.021,
+              "cos": 0.98
+            }
+          ]
+        },
+        {
+          "n_infer": 56,
+          "n_trigger": 55,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.935
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.99
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.973
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.599
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.941
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.016,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.959
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.985
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.99
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.974
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.967
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.985
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.004,
+              "cos": 0.855
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.808
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.881
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.924
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.927
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.944
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.943
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.912
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.89
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.883
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.945
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.938
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.907
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.924
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.929
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.934
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.922
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.868
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.889
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.91
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.004,
+              "cos": 0.845
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.834
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.901
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.979
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.973
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.924
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.916
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.92
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.944
+            }
+          ]
+        },
+        {
+          "n_infer": 24,
+          "n_trigger": 23,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.979
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.99
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.988
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.973
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.004,
+              "cos": 0.228
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.976
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.893
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.926
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.967
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            }
+          ]
+        },
+        {
+          "n_infer": 23,
+          "n_trigger": 22,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.003,
+              "cos": -0.258
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.687
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.974
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.971
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.977
+            }
+          ]
+        },
+        {
+          "n_infer": 25,
+          "n_trigger": 24,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.893
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.987
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.003,
+              "cos": 0.848
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.001,
+              "cos": -0.128
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.004,
+              "cos": 0.549
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": -0.215
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.879
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.988
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.977
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.98
+            }
+          ]
+        },
+        {
+          "n_infer": 25,
+          "n_trigger": 24,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.987
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.937
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.0,
+              "cos": 0.002
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.434
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.942
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.982
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.988
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.973
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.979
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": 8,
+      "success": 14,
+      "n_episodes": 15,
+      "success_rate": 93.3,
+      "wilson95": [
+        70.2,
+        98.8
+      ],
+      "avg_inferences_per_ep": 21.8,
+      "avg_triggers_per_ep": 20.8,
+      "avg_exhausts_per_ep": 0.0,
+      "seconds": 360.3,
+      "episode_log": [
+        {
+          "n_infer": 18,
+          "n_trigger": 17,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.981
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.455
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.972
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.924
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.972
+            }
+          ]
+        },
+        {
+          "n_infer": 19,
+          "n_trigger": 18,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.97
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": -0.901
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.019,
+              "cos": 0.653
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.987
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.912
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.947
+            }
+          ]
+        },
+        {
+          "n_infer": 19,
+          "n_trigger": 18,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.982
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.979
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.018,
+              "cos": 0.982
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.751
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.972
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.958
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.937
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.982
+            }
+          ]
+        },
+        {
+          "n_infer": 20,
+          "n_trigger": 19,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.979
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.515
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.983
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.963
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.931
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.966
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.997
+            }
+          ]
+        },
+        {
+          "n_infer": 56,
+          "n_trigger": 55,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.982
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.985
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.004,
+              "cos": -0.691
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.977
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.964
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.968
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.927
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.941
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.966
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.889
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.016,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.99
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.881
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.004,
+              "cos": 0.777
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.799
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.969
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.964
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.954
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.338
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.902
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.769
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.963
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.973
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.911
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.984
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.959
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.979
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.878
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.773
+            }
+          ]
+        },
+        {
+          "n_infer": 19,
+          "n_trigger": 18,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.984
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.988
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.911
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.017,
+              "cos": 0.976
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.859
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.98
+            }
+          ]
+        },
+        {
+          "n_infer": 18,
+          "n_trigger": 17,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.988
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.984
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.018,
+              "cos": 0.553
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.96
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.976
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.967
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.929
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            }
+          ]
+        },
+        {
+          "n_infer": 18,
+          "n_trigger": 17,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.984
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.963
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": -0.277
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.025,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.99
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.975
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.94
+            }
+          ]
+        },
+        {
+          "n_infer": 20,
+          "n_trigger": 19,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.983
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.972
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.171
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.924
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.973
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.858
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.971
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            }
+          ]
+        },
+        {
+          "n_infer": 18,
+          "n_trigger": 17,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.982
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.971
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.442
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.962
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.954
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.963
+            }
+          ]
+        },
+        {
+          "n_infer": 20,
+          "n_trigger": 19,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.987
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.984
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.887
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.982
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.99
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.96
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.984
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.995
+            }
+          ]
+        },
+        {
+          "n_infer": 19,
+          "n_trigger": 18,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.972
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.847
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.929
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.988
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.969
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.923
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.983
+            }
+          ]
+        },
+        {
+          "n_infer": 26,
+          "n_trigger": 25,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.978
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.326
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.019,
+              "cos": 0.987
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.983
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.945
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.919
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.018,
+              "cos": 0.257
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.016,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.016,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.769
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.967
+            }
+          ]
+        },
+        {
+          "n_infer": 18,
+          "n_trigger": 17,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.988
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.973
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.817
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.978
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.959
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.963
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.882
+            }
+          ]
+        },
+        {
+          "n_infer": 19,
+          "n_trigger": 18,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.977
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.971
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.003,
+              "cos": 0.739
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.019,
+              "cos": 0.955
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.926
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.979
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.988
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.79
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.992
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "task_id": 9,
+      "success": 11,
+      "n_episodes": 15,
+      "success_rate": 73.3,
+      "wilson95": [
+        48.0,
+        89.1
+      ],
+      "avg_inferences_per_ep": 33.47,
+      "avg_triggers_per_ep": 32.47,
+      "avg_exhausts_per_ep": 0.0,
+      "seconds": 528.2,
+      "episode_log": [
+        {
+          "n_infer": 23,
+          "n_trigger": 22,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.958
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.88
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.96
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.637
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.938
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 1.0
+            }
+          ]
+        },
+        {
+          "n_infer": 56,
+          "n_trigger": 55,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.985
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.904
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.922
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.961
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.85
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.935
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.974
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.003,
+              "cos": 0.518
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.974
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.895
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.923
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.985
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.908
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.977
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.018,
+              "cos": 0.972
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.946
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.878
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.971
+            }
+          ]
+        },
+        {
+          "n_infer": 24,
+          "n_trigger": 23,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.98
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.963
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.927
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.95
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.846
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.974
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.998
+            }
+          ]
+        },
+        {
+          "n_infer": 56,
+          "n_trigger": 55,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.903
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.963
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": -0.086
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.915
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.987
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.987
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.021,
+              "cos": 0.903
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.016,
+              "cos": 0.584
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.428
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.231
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.45
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.436
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.004,
+              "cos": 0.968
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": 0.98
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.77
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.861
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.913
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.944
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.982
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.998
+            }
+          ]
+        },
+        {
+          "n_infer": 25,
+          "n_trigger": 24,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.941
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.93
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.965
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.604
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.911
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            }
+          ]
+        },
+        {
+          "n_infer": 56,
+          "n_trigger": 55,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.979
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.939
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.903
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.96
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.873
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.963
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.947
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.752
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.976
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.985
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.882
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.986
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.853
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.994
+            }
+          ]
+        },
+        {
+          "n_infer": 25,
+          "n_trigger": 24,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.99
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.951
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.899
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.964
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.984
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.025,
+              "cos": 0.604
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.948
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            }
+          ]
+        },
+        {
+          "n_infer": 23,
+          "n_trigger": 22,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.89
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.948
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.977
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.004,
+              "cos": 0.457
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.782
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 1.0
+            }
+          ]
+        },
+        {
+          "n_infer": 56,
+          "n_trigger": 55,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.988
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.853
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.932
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.959
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.021,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.839
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.975
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.017,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.005,
+              "cos": -0.349
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.919
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.964
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.982
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.017,
+              "cos": 0.475
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.016,
+              "cos": 0.848
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.977
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.946
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.017,
+              "cos": 0.758
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.982
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.918
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.019,
+              "cos": 0.955
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.94
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.981
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.981
+            }
+          ]
+        },
+        {
+          "n_infer": 25,
+          "n_trigger": 24,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.98
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.981
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.889
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.958
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.953
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.707
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.97
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            }
+          ]
+        },
+        {
+          "n_infer": 23,
+          "n_trigger": 22,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.983
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.823
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.963
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.982
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.427
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.965
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.987
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.996
+            }
+          ]
+        },
+        {
+          "n_infer": 25,
+          "n_trigger": 24,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.989
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.981
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.892
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.969
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.006,
+              "cos": 0.951
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.004,
+              "cos": 0.561
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.994
+            }
+          ]
+        },
+        {
+          "n_infer": 33,
+          "n_trigger": 32,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.988
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.925
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.939
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.003,
+              "cos": 0.954
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.818
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.001,
+              "cos": 0.207
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.934
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.992
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.882
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.97
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.237
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.988
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.996
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.997
+            }
+          ]
+        },
+        {
+          "n_infer": 25,
+          "n_trigger": 24,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.991
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.933
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.914
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.967
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.814
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.872
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.994
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.999
+            }
+          ]
+        },
+        {
+          "n_infer": 27,
+          "n_trigger": 26,
+          "n_exhaust": 0,
+          "events": [
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.012,
+              "cos": 0.911
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.008,
+              "cos": 0.937
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.919
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.002,
+              "cos": 0.704
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 1.0
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.007,
+              "cos": 0.414
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.009,
+              "cos": 0.977
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.011,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.983
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.997
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.014,
+              "cos": 0.998
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.995
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.013,
+              "cos": 0.999
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.015,
+              "cos": 0.993
+            },
+            {
+              "kind": "trigger",
+              "step": 5,
+              "ratio": 0.01,
+              "cos": 0.993
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "success": 119,
+    "n_episodes": 150,
+    "success_rate": 79.3,
+    "wilson95": [
+      72.2,
+      85.0
+    ],
+    "avg_inferences_per_ep": 29.02
+  }
+}

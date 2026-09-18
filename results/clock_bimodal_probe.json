@@ -1,0 +1,629 @@
+{
+  "meta": {
+    "policy": "lerobot/smolvla_libero",
+    "num_steps": 1,
+    "n": 100,
+    "warmup": 20,
+    "threshold_ms": 75.0,
+    "note": "nvidia-smi -lgc가 이 WSL2 환경에서 실패해(Unknown Error, 지원 목록의 값 3105MHz로도 재현) 클럭 고정 대신 호출별 클럭·전력을 직접 상관 분석했다.",
+    "verdict": "두 버킷의 클럭 차이가 105MHz로 작다 — 이 데이터에서는 클럭 램핑이 이봉 분포의 1차 설명이 아닐 수 있다."
+  },
+  "rows": [
+    {
+      "i": 0,
+      "latency_ms": 111.693,
+      "clocks_sm_mhz": 2715.0,
+      "power_w": 97.45
+    },
+    {
+      "i": 1,
+      "latency_ms": 94.66,
+      "clocks_sm_mhz": 2715.0,
+      "power_w": 96.61
+    },
+    {
+      "i": 2,
+      "latency_ms": 127.544,
+      "clocks_sm_mhz": 2715.0,
+      "power_w": 94.42
+    },
+    {
+      "i": 3,
+      "latency_ms": 100.747,
+      "clocks_sm_mhz": 2715.0,
+      "power_w": 92.24
+    },
+    {
+      "i": 4,
+      "latency_ms": 88.926,
+      "clocks_sm_mhz": 2715.0,
+      "power_w": 88.45
+    },
+    {
+      "i": 5,
+      "latency_ms": 112.519,
+      "clocks_sm_mhz": 2715.0,
+      "power_w": 86.9
+    },
+    {
+      "i": 6,
+      "latency_ms": 111.558,
+      "clocks_sm_mhz": 2715.0,
+      "power_w": 85.21
+    },
+    {
+      "i": 7,
+      "latency_ms": 118.846,
+      "clocks_sm_mhz": 2715.0,
+      "power_w": 82.49
+    },
+    {
+      "i": 8,
+      "latency_ms": 99.505,
+      "clocks_sm_mhz": 2715.0,
+      "power_w": 83.38
+    },
+    {
+      "i": 9,
+      "latency_ms": 72.361,
+      "clocks_sm_mhz": 1875.0,
+      "power_w": 83.9
+    },
+    {
+      "i": 10,
+      "latency_ms": 69.13,
+      "clocks_sm_mhz": 1875.0,
+      "power_w": 81.5
+    },
+    {
+      "i": 11,
+      "latency_ms": 128.254,
+      "clocks_sm_mhz": 1830.0,
+      "power_w": 77.43
+    },
+    {
+      "i": 12,
+      "latency_ms": 59.691,
+      "clocks_sm_mhz": 1770.0,
+      "power_w": 74.68
+    },
+    {
+      "i": 13,
+      "latency_ms": 133.277,
+      "clocks_sm_mhz": 1770.0,
+      "power_w": 72.01
+    },
+    {
+      "i": 14,
+      "latency_ms": 116.455,
+      "clocks_sm_mhz": 1695.0,
+      "power_w": 67.81
+    },
+    {
+      "i": 15,
+      "latency_ms": 132.892,
+      "clocks_sm_mhz": 1665.0,
+      "power_w": 64.45
+    },
+    {
+      "i": 16,
+      "latency_ms": 98.46,
+      "clocks_sm_mhz": 1650.0,
+      "power_w": 59.9
+    },
+    {
+      "i": 17,
+      "latency_ms": 100.686,
+      "clocks_sm_mhz": 1620.0,
+      "power_w": 59.24
+    },
+    {
+      "i": 18,
+      "latency_ms": 108.584,
+      "clocks_sm_mhz": 1620.0,
+      "power_w": 59.27
+    },
+    {
+      "i": 19,
+      "latency_ms": 132.493,
+      "clocks_sm_mhz": 1620.0,
+      "power_w": 59.37
+    },
+    {
+      "i": 20,
+      "latency_ms": 103.698,
+      "clocks_sm_mhz": 1590.0,
+      "power_w": 59.47
+    },
+    {
+      "i": 21,
+      "latency_ms": 69.251,
+      "clocks_sm_mhz": 1590.0,
+      "power_w": 60.28
+    },
+    {
+      "i": 22,
+      "latency_ms": 99.474,
+      "clocks_sm_mhz": 1620.0,
+      "power_w": 60.17
+    },
+    {
+      "i": 23,
+      "latency_ms": 78.964,
+      "clocks_sm_mhz": 1680.0,
+      "power_w": 61.06
+    },
+    {
+      "i": 24,
+      "latency_ms": 133.756,
+      "clocks_sm_mhz": 1680.0,
+      "power_w": 60.73
+    },
+    {
+      "i": 25,
+      "latency_ms": 106.849,
+      "clocks_sm_mhz": 1680.0,
+      "power_w": 61.14
+    },
+    {
+      "i": 26,
+      "latency_ms": 63.689,
+      "clocks_sm_mhz": 1710.0,
+      "power_w": 61.14
+    },
+    {
+      "i": 27,
+      "latency_ms": 91.152,
+      "clocks_sm_mhz": 1710.0,
+      "power_w": 61.24
+    },
+    {
+      "i": 28,
+      "latency_ms": 128.379,
+      "clocks_sm_mhz": 1710.0,
+      "power_w": 61.48
+    },
+    {
+      "i": 29,
+      "latency_ms": 70.936,
+      "clocks_sm_mhz": 1710.0,
+      "power_w": 61.79
+    },
+    {
+      "i": 30,
+      "latency_ms": 63.738,
+      "clocks_sm_mhz": 1710.0,
+      "power_w": 62.0
+    },
+    {
+      "i": 31,
+      "latency_ms": 119.978,
+      "clocks_sm_mhz": 1725.0,
+      "power_w": 61.28
+    },
+    {
+      "i": 32,
+      "latency_ms": 109.306,
+      "clocks_sm_mhz": 1725.0,
+      "power_w": 61.46
+    },
+    {
+      "i": 33,
+      "latency_ms": 106.81,
+      "clocks_sm_mhz": 1725.0,
+      "power_w": 61.28
+    },
+    {
+      "i": 34,
+      "latency_ms": 94.871,
+      "clocks_sm_mhz": 1725.0,
+      "power_w": 61.44
+    },
+    {
+      "i": 35,
+      "latency_ms": 114.418,
+      "clocks_sm_mhz": 1725.0,
+      "power_w": 61.42
+    },
+    {
+      "i": 36,
+      "latency_ms": 67.113,
+      "clocks_sm_mhz": 1725.0,
+      "power_w": 61.69
+    },
+    {
+      "i": 37,
+      "latency_ms": 73.335,
+      "clocks_sm_mhz": 1725.0,
+      "power_w": 61.83
+    },
+    {
+      "i": 38,
+      "latency_ms": 87.528,
+      "clocks_sm_mhz": 1725.0,
+      "power_w": 61.33
+    },
+    {
+      "i": 39,
+      "latency_ms": 114.914,
+      "clocks_sm_mhz": 1725.0,
+      "power_w": 61.53
+    },
+    {
+      "i": 40,
+      "latency_ms": 59.849,
+      "clocks_sm_mhz": 1755.0,
+      "power_w": 62.42
+    },
+    {
+      "i": 41,
+      "latency_ms": 69.128,
+      "clocks_sm_mhz": 1755.0,
+      "power_w": 62.42
+    },
+    {
+      "i": 42,
+      "latency_ms": 102.684,
+      "clocks_sm_mhz": 1755.0,
+      "power_w": 62.56
+    },
+    {
+      "i": 43,
+      "latency_ms": 63.105,
+      "clocks_sm_mhz": 1755.0,
+      "power_w": 63.28
+    },
+    {
+      "i": 44,
+      "latency_ms": 71.143,
+      "clocks_sm_mhz": 1755.0,
+      "power_w": 63.0
+    },
+    {
+      "i": 45,
+      "latency_ms": 73.625,
+      "clocks_sm_mhz": 1755.0,
+      "power_w": 63.19
+    },
+    {
+      "i": 46,
+      "latency_ms": 72.883,
+      "clocks_sm_mhz": 1785.0,
+      "power_w": 63.45
+    },
+    {
+      "i": 47,
+      "latency_ms": 59.418,
+      "clocks_sm_mhz": 1785.0,
+      "power_w": 63.71
+    },
+    {
+      "i": 48,
+      "latency_ms": 90.429,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 64.06
+    },
+    {
+      "i": 49,
+      "latency_ms": 57.103,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 63.66
+    },
+    {
+      "i": 50,
+      "latency_ms": 100.305,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 63.83
+    },
+    {
+      "i": 51,
+      "latency_ms": 70.841,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 63.79
+    },
+    {
+      "i": 52,
+      "latency_ms": 119.299,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 63.88
+    },
+    {
+      "i": 53,
+      "latency_ms": 63.964,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 64.02
+    },
+    {
+      "i": 54,
+      "latency_ms": 160.598,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 63.39
+    },
+    {
+      "i": 55,
+      "latency_ms": 76.204,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 63.47
+    },
+    {
+      "i": 56,
+      "latency_ms": 118.611,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 62.33
+    },
+    {
+      "i": 57,
+      "latency_ms": 102.126,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 63.29
+    },
+    {
+      "i": 58,
+      "latency_ms": 78.062,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 62.59
+    },
+    {
+      "i": 59,
+      "latency_ms": 57.093,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 63.17
+    },
+    {
+      "i": 60,
+      "latency_ms": 103.936,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 63.29
+    },
+    {
+      "i": 61,
+      "latency_ms": 153.943,
+      "clocks_sm_mhz": 1965.0,
+      "power_w": 62.31
+    },
+    {
+      "i": 62,
+      "latency_ms": 121.708,
+      "clocks_sm_mhz": 1680.0,
+      "power_w": 62.04
+    },
+    {
+      "i": 63,
+      "latency_ms": 92.241,
+      "clocks_sm_mhz": 1635.0,
+      "power_w": 61.95
+    },
+    {
+      "i": 64,
+      "latency_ms": 123.068,
+      "clocks_sm_mhz": 1635.0,
+      "power_w": 61.63
+    },
+    {
+      "i": 65,
+      "latency_ms": 91.878,
+      "clocks_sm_mhz": 1605.0,
+      "power_w": 61.25
+    },
+    {
+      "i": 66,
+      "latency_ms": 112.84,
+      "clocks_sm_mhz": 1740.0,
+      "power_w": 61.29
+    },
+    {
+      "i": 67,
+      "latency_ms": 58.571,
+      "clocks_sm_mhz": 1740.0,
+      "power_w": 60.81
+    },
+    {
+      "i": 68,
+      "latency_ms": 63.715,
+      "clocks_sm_mhz": 1740.0,
+      "power_w": 60.77
+    },
+    {
+      "i": 69,
+      "latency_ms": 110.543,
+      "clocks_sm_mhz": 1740.0,
+      "power_w": 61.33
+    },
+    {
+      "i": 70,
+      "latency_ms": 63.043,
+      "clocks_sm_mhz": 1740.0,
+      "power_w": 60.72
+    },
+    {
+      "i": 71,
+      "latency_ms": 109.012,
+      "clocks_sm_mhz": 1740.0,
+      "power_w": 61.64
+    },
+    {
+      "i": 72,
+      "latency_ms": 74.696,
+      "clocks_sm_mhz": 1740.0,
+      "power_w": 61.85
+    },
+    {
+      "i": 73,
+      "latency_ms": 60.194,
+      "clocks_sm_mhz": 1755.0,
+      "power_w": 62.07
+    },
+    {
+      "i": 74,
+      "latency_ms": 83.047,
+      "clocks_sm_mhz": 1755.0,
+      "power_w": 62.94
+    },
+    {
+      "i": 75,
+      "latency_ms": 101.888,
+      "clocks_sm_mhz": 1755.0,
+      "power_w": 62.87
+    },
+    {
+      "i": 76,
+      "latency_ms": 93.499,
+      "clocks_sm_mhz": 1755.0,
+      "power_w": 62.16
+    },
+    {
+      "i": 77,
+      "latency_ms": 57.252,
+      "clocks_sm_mhz": 1755.0,
+      "power_w": 62.16
+    },
+    {
+      "i": 78,
+      "latency_ms": 66.258,
+      "clocks_sm_mhz": 1755.0,
+      "power_w": 62.28
+    },
+    {
+      "i": 79,
+      "latency_ms": 120.388,
+      "clocks_sm_mhz": 1875.0,
+      "power_w": 63.14
+    },
+    {
+      "i": 80,
+      "latency_ms": 80.232,
+      "clocks_sm_mhz": 1875.0,
+      "power_w": 62.72
+    },
+    {
+      "i": 81,
+      "latency_ms": 94.448,
+      "clocks_sm_mhz": 1875.0,
+      "power_w": 62.85
+    },
+    {
+      "i": 82,
+      "latency_ms": 86.299,
+      "clocks_sm_mhz": 1875.0,
+      "power_w": 63.29
+    },
+    {
+      "i": 83,
+      "latency_ms": 59.269,
+      "clocks_sm_mhz": 1875.0,
+      "power_w": 63.88
+    },
+    {
+      "i": 84,
+      "latency_ms": 59.78,
+      "clocks_sm_mhz": 2055.0,
+      "power_w": 65.16
+    },
+    {
+      "i": 85,
+      "latency_ms": 133.409,
+      "clocks_sm_mhz": 2280.0,
+      "power_w": 68.59
+    },
+    {
+      "i": 86,
+      "latency_ms": 118.094,
+      "clocks_sm_mhz": 2280.0,
+      "power_w": 70.96
+    },
+    {
+      "i": 87,
+      "latency_ms": 92.411,
+      "clocks_sm_mhz": 2280.0,
+      "power_w": 72.81
+    },
+    {
+      "i": 88,
+      "latency_ms": 56.488,
+      "clocks_sm_mhz": 2370.0,
+      "power_w": 74.42
+    },
+    {
+      "i": 89,
+      "latency_ms": 93.582,
+      "clocks_sm_mhz": 2370.0,
+      "power_w": 76.39
+    },
+    {
+      "i": 90,
+      "latency_ms": 120.175,
+      "clocks_sm_mhz": 2370.0,
+      "power_w": 78.62
+    },
+    {
+      "i": 91,
+      "latency_ms": 109.263,
+      "clocks_sm_mhz": 2370.0,
+      "power_w": 80.75
+    },
+    {
+      "i": 92,
+      "latency_ms": 84.782,
+      "clocks_sm_mhz": 2370.0,
+      "power_w": 81.49
+    },
+    {
+      "i": 93,
+      "latency_ms": 73.599,
+      "clocks_sm_mhz": 2370.0,
+      "power_w": 81.95
+    },
+    {
+      "i": 94,
+      "latency_ms": 59.086,
+      "clocks_sm_mhz": 2370.0,
+      "power_w": 82.86
+    },
+    {
+      "i": 95,
+      "latency_ms": 85.303,
+      "clocks_sm_mhz": 2400.0,
+      "power_w": 83.41
+    },
+    {
+      "i": 96,
+      "latency_ms": 68.123,
+      "clocks_sm_mhz": 2400.0,
+      "power_w": 84.61
+    },
+    {
+      "i": 97,
+      "latency_ms": 99.514,
+      "clocks_sm_mhz": 2400.0,
+      "power_w": 85.0
+    },
+    {
+      "i": 98,
+      "latency_ms": 122.616,
+      "clocks_sm_mhz": 2400.0,
+      "power_w": 85.36
+    },
+    {
+      "i": 99,
+      "latency_ms": 74.807,
+      "clocks_sm_mhz": 2400.0,
+      "power_w": 85.69
+    }
+  ],
+  "lo_bucket": {
+    "label": "저지연(<75ms)",
+    "n": 34,
+    "latency_ms_median": 63.9,
+    "clocks_sm_mhz_mean": 1881.2,
+    "clocks_sm_mhz_median": 1755.0,
+    "power_w_mean": 66.9
+  },
+  "hi_bucket": {
+    "label": "고지연(>=75ms)",
+    "n": 66,
+    "latency_ms_median": 106.8,
+    "clocks_sm_mhz_mean": 1986.6,
+    "clocks_sm_mhz_median": 1852.5,
+    "power_w_mean": 68.7
+  }
+}
